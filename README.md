@@ -109,7 +109,7 @@ Fast flags can materially change visual quality and behavior. Review them when t
 ## Getting started
 
 1. Install Mocktail and its host dependencies according to the distribution or package that provides it.
-2. Place `config.yaml` in the configuration location used by Mocktail.
+2. Place `config.yaml` and `fflags.json` in the configuration location used by Mocktail.
 3. Adjust the device, graphics backend, frame-rate limit, memory limit, audio devices, and update settings for the host system.
 4. Keep optional settings commented out until they are needed.
 5. Start Mocktail and review its startup output for available audio devices and update or graphics diagnostics.
