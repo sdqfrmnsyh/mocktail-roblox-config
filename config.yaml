@@ -34,7 +34,7 @@ runtime:
 appearance:
   # String (default: roblox): use Roblox's saved account theme. Supported
   # overrides: dark, light, or system (follow the desktop color scheme).
-  theme: roblox
+  theme: dark
 
 graphics:
   # String (default: direct-vulkan): graphics backend. Use opengl on hardware
@@ -60,7 +60,7 @@ performance:
   # Integer MiB (default: 0): hard RAM cap for the Mocktail process tree.
   # 0 disables the cap. cgroup v2 also disables swap; other Linux systems use
   # an RSS+swap watchdog. 6144 is a conservative starting point for 32 GiB RAM.
-  memory_limit_mb: 2560
+  memory_limit_mb: 2048
   # String (default: auto): request Feral GameMode when its host daemon and
   # client library are available. Supported values: auto, on, off.
   gamemode: on
@@ -72,7 +72,7 @@ audio:
   # String (default: default): input device name, `id:<number>` printed during
   # startup, or `disabled`. IDs disambiguate duplicate names but may change
   # between boots; prefer the exact device name when it is unique.
-  input_device: default
+  input_device: disabled
 
 integrations:
   discord_rpc:
@@ -118,9 +118,9 @@ network:
   # Optional fixed HTTP proxy. Uncomment both values together. The host must
   # not contain a scheme such as http://.
   # String (optional, default: disabled): proxy host name or IP address.
-  # proxy_host: 127.0.0.1
+  # proxy_host: disabled
   # Integer (optional, default: disabled): proxy TCP port from 1 to 65535.
-  # proxy_port: 8080
+  # proxy_port: disabled
   # Absolute path (optional): custom PEM CA bundle. Mocktail reads this file
   # directly and does not replace it during Roblox payload updates.
   # ca_bundle: /home/user/.config/mocktail/cacert.pem
